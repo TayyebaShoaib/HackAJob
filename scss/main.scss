@@ -1,0 +1,39 @@
+@import 'variables';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#container {
+    max-width: 1200px;
+    margin: 0 auto 100px; 
+    padding: 20px;
+
+    h2 {
+        color: $blue-green;
+        margin-top: 80px;
+        text-decoration: underline $grey;
+    }
+}
+
+table {
+    border-collapse:collapse;
+    border-bottom: 1px solid $blue-green;
+    tr {
+        border-bottom: 1px solid $grey;
+        &:nth-child(even) {
+            background-color: $grey;
+        }
+    }
+    th, td {
+        padding: 15px 30px 15px 5px;
+    }
+    thead {
+        background-color: $blue-green;
+        color: $white;
+    }
+}
